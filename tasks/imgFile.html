@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        figure {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px gray;
+        }
+
+        img {
+            width: 250px;
+            height: 180px;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="../assests/beach.png"
+                 alt="Beautiful scenories">
+            <figcaption>Beach</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../assests/cloud.png"
+                 alt="A blue clouds">
+            <figcaption>Cloud</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../assests/mountain.png"
+                 alt="A greenary feel">
+            <figcaption>Mountain</figcaption>
+        </figure>
+
+    </div>
+
+</body>
+</html>

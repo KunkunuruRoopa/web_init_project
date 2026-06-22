@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multimedia Web Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        audio, video {
+            margin-top: 15px;
+            width: 80%;
+        }
+        video{
+            height: 350px;
+            width: 380px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>HTML Multimedia Web Page</h1>
+
+    <h2>Audio Player</h2>
+
+    <audio controls>
+        <source src="../assests/Jagamantha song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <h2>Video Player</h2>
+
+    <video controls width="700">
+        <source src="../assests/sisters.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+</div>
+<script src=""></script>
+
+</body>
+</html>

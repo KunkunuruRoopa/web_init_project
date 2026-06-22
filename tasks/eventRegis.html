@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            width: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: green;
+        }
+
+        .reset-btn {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Event Registration Form</h1>
+
+    <form>
+
+        <h2>Participant Information</h2>
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter Full Name" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter Email Address" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" placeholder="Enter Mobile Number" required>
+
+        <div class="radio-group">
+            <label>Gender:</label><br><br>
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <h2>Event Details</h2>
+
+        <label>Select Event:</label>
+
+        <select required>
+            <option value="">-- Select Event --</option>
+            <option>Technical Quiz</option>
+            <option>Paper Presentation</option>
+            <option>Project Expo</option>
+            <option>Hackathon</option>
+            <option>Poster Presentation</option>
+        </select>
+
+        <label>College / Organization Name:</label>
+        <input type="text" placeholder="Enter College Name">
+
+        <label>Department:</label>
+        <input type="text" placeholder="Enter Department">
+
+        <label>Year of Study:</label>
+
+        <select>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+
+        <h2>Address Information</h2>
+
+        <label>Address:</label>
+        <textarea rows="4"
+                  placeholder="Enter Address"></textarea>
+
+        <label>City:</label>
+        <input type="text" placeholder="Enter City">
+
+        <label>State:</label>
+        <input type="text" placeholder="Enter State">
+
+        <label>PIN Code:</label>
+        <input type="text" placeholder="Enter PIN Code">
+
+        <h2>Additional Information</h2>
+
+        <label>Special Requirements:</label>
+        <textarea rows="3"
+                  placeholder="Mention any special requirements"></textarea>
+
+        <div class="checkbox-group">
+            <input type="checkbox" required>
+            I agree to the event terms and conditions.
+        </div>
+
+        <br><br>
+
+        <button type="submit" class="submit-btn">
+            Register
+        </button>
+
+        <button type="reset" class="reset-btn">
+            Reset
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

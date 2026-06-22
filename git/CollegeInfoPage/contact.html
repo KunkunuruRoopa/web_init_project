@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RVR NRI Engineering College</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We're Here to Help You</p>
+    </header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="/git/CollegeInfoPage/courses.html">Courses</a>
+    <a href="/git/CollegeInfoPage/admissions.html">Departments</a>
+    <a href="/git/CollegeInfoPage/facilities.html">Admissions</a>
+    <a href="/git/CollegeInfoPage/departments.html">Facilities</a>
+    <a href="/git/CollegeInfoPage/contact.html">Contact</a>
+</nav>
+    <section class="cards">
+
+        <div class="card">
+            <h2>📍 Address</h2>
+            <p>
+                RVR NRI Engineering College<br>
+                Pothavarapadu,<br>
+                Agiripalli, Andhra Pradesh - 521212
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📞 Phone</h2>
+            <p>
+                +91 9876543210<br>
+                +91 9494258857
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📧 Email</h2>
+            <p>
+                info@rvrnricollege.edu<br>
+                admissions@rvrnricollege.edu.in
+            </p>
+        </div>
+
+    </section>
+
+    <section class="form-section">
+
+        <form id="contactForm">
+
+            <h2>Send Us a Message</h2>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter Your Name"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter Your Email"
+                   required>
+
+            <input type="tel"
+                   id="phone"
+                   placeholder="Enter Your Phone Number"
+                   required>
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Enter Your Message"
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        © 2026 RVR NRI Engineering College | All Rights Reserved
+    </footer>
+
+    <script>
+        document.getElementById("contactForm")
+            .addEventListener("submit", function(e) {
+
+                e.preventDefault();
+
+                alert(
+                    "Thank you for contacting ABC Engineering College! We will get back to you soon."
+                );
+
+                this.reset();
+            });
+    </script>
+
+</body>
+
+</html>

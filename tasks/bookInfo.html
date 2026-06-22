@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Information Portal</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f4f6f9;
+            margin:0;
+            padding:20px;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        h1{
+            text-align:center;
+            color:darkblue;
+        }
+
+        .book{
+            display:flex;
+            gap:25px;
+            align-items:flex-start;
+        }
+
+        .book img{
+            height: 350px;
+            width:280px;
+            border-radius:10px;
+        }
+
+        .details{
+            flex:1;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th{
+            background:#4CAF50;
+            color:white;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:left;
+        }
+
+        .price{
+            color:green;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        button{
+            background:#2563eb;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Book Information Portal</h1>
+
+    <div class="book">
+
+        <img src="../assests/Book.jpeg" alt="Book Cover">
+
+        <div class="details">
+
+            <h2>WEB DEVELOPMET.</h2>
+
+            <p class="price">₹590</p>
+
+            <button id="readBtn">Read More</button>
+
+        </div>
+
+    </div>
+
+    <h2>Book Details</h2>
+
+    <table>
+
+        <tr>
+            <th>Information</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Title</td>
+            <td>Mastering HTML,CSS & JS.</td>
+        </tr>
+
+        <tr>
+            <td>Author</td>
+            <td>Laura Lemay
+                Rafe Colburn
+                Jennifer Kyrnin
+            </td>
+        </tr>
+
+        <tr>
+            <td>Publisher</td>
+            <td>BPB PUBLICATION</td>
+        </tr>
+
+        <tr>
+            <td>Publication Year</td>
+            <td>1997</td>
+        </tr>
+
+        <tr>
+            <td>Genre</td>
+            <td>Main book prescribed for a subject/course</td>
+        </tr>
+
+    </table>
+
+    <h2>Book Summary</h2>
+
+    <p>
+       Mastering HTML, CSS & JavaScript Web Publishing is a comprehensive guide to building modern websites from scratch. The book teaches the three core technologies of web development:
+           
+            HTML – Creates the structure and content of web pages.
+            CSS – Controls the appearance, layout, colors, fonts, and responsiveness.
+            JavaScript – Adds interactivity and dynamic behavior to websites.
+    </p>
+
+</div>
+
+<script src="book.js"></script>
+
+</body>
+</html>

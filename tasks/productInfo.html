@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Information Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .product {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .product img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .details {
+            flex: 1;
+        }
+
+        .price {
+            color: green;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .buy-btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Product Information Page</h1>
+
+    <div class="product">
+
+        <img src="../assests/hp.png" alt="Laptop Image">
+
+        <div class="details">
+
+            <h2>HP Pavilion Laptop</h2>
+
+            <p>
+                A powerful laptop designed for students,
+                developers, and professionals.
+            </p>
+
+            <p class="price">₹65,999</p>
+
+            <button class="buy-btn">Buy Now</button>
+
+        </div>
+
+    </div>
+
+    <h2>Product Specifications</h2>
+
+    <table>
+
+        <tr>
+            <th>Specification</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Processor</td>
+            <td>Intel Core i5 13th Gen</td>
+        </tr>
+
+        <tr>
+            <td>RAM</td>
+            <td>16 GB</td>
+        </tr>
+
+        <tr>
+            <td>Storage</td>
+            <td>512 GB SSD</td>
+        </tr>
+
+        <tr>
+            <td>Display</td>
+            <td>15.6 Inch Full HD</td>
+        </tr>
+
+        <tr>
+            <td>Operating System</td>
+            <td>Windows 11</td>
+        </tr>
+
+        <tr>
+            <td>Battery Life</td>
+            <td>Up to 8 Hours</td>
+        </tr>
+
+    </table>
+
+    <h2>Key Features</h2>
+
+    <ul>
+        <li>Fast SSD Storage</li>
+        <li>Full HD Anti-Glare Display</li>
+        <li>Backlit Keyboard</li>
+        <li>Lightweight Design</li>
+        <li>Wi-Fi 6 Connectivity</li>
+    </ul>
+
+    <h2>Product Description</h2>
+
+    <p>
+        The HP Pavilion Laptop delivers excellent performance
+        for programming, web development, online learning,
+        multimedia editing, and everyday productivity tasks.
+        It combines powerful hardware with a sleek design
+        to provide a smooth computing experience.
+    </p>
+
+</div>
+
+<script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Educational Website</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            line-height:1.6;
+            background:#f4f6f9;
+            color:#222;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#00509e;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        nav a:hover,
+        nav a:focus{
+            text-decoration:underline;
+        }
+
+        main{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        section{
+            background:white;
+            margin-bottom:20px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        img{
+            width:100%;
+            max-width:500px;
+            display:block;
+            margin:auto;
+            border-radius:10px;
+        }
+
+        form{
+            margin-top:15px;
+        }
+
+        label{
+            font-weight:bold;
+            display:block;
+            margin-top:10px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:10px 20px;
+            background:#00509e;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#003366;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Accessible Educational Website</h1>
+    <p>Learning Resources for Students</p>
+</header>
+
+<nav aria-label="Main Navigation">
+    <a href="#courses">Courses</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+    <section id="courses">
+
+        <h2>Available Courses</h2>
+
+        <p>
+            Explore our educational programs designed
+            for beginners and advanced learners.
+        </p>
+
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript Programming</li>
+            <li>Python Development</li>
+            <li>Web Development Projects</li>
+        </ul>
+
+    </section>
+
+    <section id="resources">
+
+        <h2>Learning Resources</h2>
+
+        <img src="education.jpg"
+             alt="Students learning in a modern classroom">
+
+        <p>
+            Access tutorials, coding exercises,
+            project ideas, and study materials.
+        </p>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Student Support Form</h2>
+
+        <form>
+
+            <label for="name">Full Name</label>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name"
+                   required>
+
+            <label for="email">Email Address</label>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        © 2026 Accessible Educational Website
+    </p>
+</footer>
+
+<script src="educationalWebsite.js"></script>
+</body>
+</html>
